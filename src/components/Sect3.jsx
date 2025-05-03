@@ -9,12 +9,12 @@ const Sect3 = () => {
   return (
     <div>
       <section className=' m-12'>
-        <div className='flex flex-col md:flex-row py-12 px-6 bg-[#F1F5F9]  rounded-lg'>
-          <div className=' text-[#1C1C1C]  w-full md:w-2/5  mb-8 md:mb-0'>
-            <h2 className='text-3xl font-bold mb-4'>Real-Time Moderation</h2>
-            <p className='text-xl'>Keep your discussions focused and relevant with live question approval or rejection</p>
+        <div className='flex flex-col md:flex-row  bg-[#F1F5F9]  rounded-lg'>
+          <div className=' text-[#1C1C1C] flex flex-col justify-center  md:px-12'>
+            <h2 className='text-3xl font-bold mb-4 '>Real-Time Moderation</h2>
+            <p className=''>Keep your discussions focused and relevant with live question approval or rejection</p>
           </div>
-          <div className= 'w-full md:w-3/5'>
+          <div className= ''>
             <img src={mq} alt=""  className=''/>
           </div>
         </div>
@@ -55,12 +55,12 @@ const Sect3 = () => {
           
           </div>
 
-        <div>
-          <div>
-            <h2></h2>
-            <p></p>
+        <div className='flex flex-col md:flex-row  bg-[#EDE9FE] rounded-lg'>
+          <div className=' text-[#1C1C1C]  flex flex-col justify-center md:px-12'>
+            <h2 className=' text-3xl font-bold mb-4'>Post-Event Analytics</h2>
+            <p>Gain insights into your event’s engagement with metrics on question volume, upvotes, and attendee participation</p>
           </div>
-          <div>
+          <div className=''> 
             <img src={MT} alt="" />
           </div>
 </div>
