@@ -1,5 +1,5 @@
 import React from 'react'
-import mq from '../assets/mq.png'
+import mq from '../assets/MQ.png'
 import EC from '../assets/EC.png'
 import HFD from '../assets/HFD.png'
 import HFDL from '../assets/HFDL.png'
@@ -70,4 +70,4 @@ const Sect3 = () => {
   )
 }
 
-export default Sect3
+export default Sect3;
