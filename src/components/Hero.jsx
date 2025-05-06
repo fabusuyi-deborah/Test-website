@@ -3,7 +3,9 @@ import heroImage from '../assets/heroimg.png';
 
 const Hero = () => {
   return (
-    <div className=" flex flex-col items center px-4 py-8 md:py-12">
+  <div>
+    <section className=" flex flex-col items center px-4 py-8 md:py-12">
+
       <h1 className='text-3xl md:text-4xl font-bold text-center w-full md:w-3/4 lg:w-2/3 mx-auto'>
         Power Up Your Events with Interactive <span> Q&A  </span>Sessions</h1>
       
@@ -17,7 +19,8 @@ const Hero = () => {
       <div className='hero-image w-full flex justify-center '>
         <img src={heroImage}  alt="Hero Image" className='w-full max-w-md md:max-w-lg lg:max-w-2xl mx-auto mt-4'  />
       </div>
-    </div>
+      </section>
+      </div>
   );
 };
 
