@@ -8,7 +8,7 @@ import MT from '../assets/MT.png'
 const Sect3 = () => {
   return (
     <div>
-      <section className='flex flex-col justify-center items-center py-8 px-4  md:py-8 lg:mx-auto'>
+      <section className=' py-8 px-4  md:py-8 lg:mx-auto'>
 
         <div className='flex flex-col md:flex-row  bg-[#F1F5F9]  rounded-lg m-4'>
           <div className=' text-[#1C1C1C] flex flex-col justify-center  md:px-12 m-6 '>
