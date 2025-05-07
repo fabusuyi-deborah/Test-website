@@ -1,7 +1,7 @@
 import React from 'react'
 import FI from '../assets/FI.png'
 import DSC from '../assets/DSC.png'
-import GP from '../assets/GP.png'
+import GP from '../assets/Gp.png'
 
 const Sect5 = () => {
   return (
