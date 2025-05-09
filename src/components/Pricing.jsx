@@ -1,10 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
 import PaaQ from '../assets/PaaQ.png'
+import Plans from './Plans.jsx'
 
 
 const Pricing = () => {
-  const [isAnnual, setIsAnnual] = useState(false);
+  const [isAnnual, setIsAnnual] = useState(true); // State to toggle between monthly and annual billing
 
   const toggleBilling = () => {
     setIsAnnual(!isAnnual);
@@ -12,15 +13,15 @@ const Pricing = () => {
 
     return (
       <div>
-        <section className='py-8 px-4 md:py-8 lg:mx-auto '>
-          <div className='text-center bg-[#EAF7FF] rounded-lg m-4'>
+        <section className='py-8 px-4 md:py-8 lg:mx-auto m-4 '>
+          <div className='text-center bg-[#EAF7FF] rounded-lg p-4'>
             <div className='justify-center items-center flex flex-col pt-4'>
               <img src={PaaQ} alt="" />
             </div>
-            <h3 className='pt-4 text-[#181F1F]'>PRICING $ PLANS</h3>
+            <h3 className='pt-4 text-[#181F1F] font-medium'>PRICING $ PLANS</h3>
             <h2 className='pt-4 font-bold text-4xl '>Explore and choose the perfect plan for your needs.</h2>
 
-            <div className="flex items-center justify-center space-x-4 mt-4">
+            <div className="flex items-center justify-center space-x-4 m-4">
               <span className={`text-sm font-medium ${!isAnnual ? 'text-blue-600' : 'text-gray-500'}`}>
                 Monthly
               </span>
@@ -49,6 +50,8 @@ const Pricing = () => {
             </div>
 
           </div>
+
+          <Plans isAnnual={isAnnual} />
 
         </section>
       </div>
