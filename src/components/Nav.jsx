@@ -1,6 +1,5 @@
 import React from 'react';
 // import { useState } from 'react';
-import  paaq  from '../assets/paaq.jpg';
 
 const Nav = () => {
   return (
@@ -8,7 +7,7 @@ const Nav = () => {
       {/* Logo and Brand */}
       <div className="flex items-center">
         <div className="mr-2">
-          <img src={paaq} alt="Logo" />
+          <img src="https://via.placeholder.com/50" alt="Logo" className="w-10 h-10" />
         </div>
       </div>
       

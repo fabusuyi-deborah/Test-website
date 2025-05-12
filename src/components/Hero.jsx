@@ -9,7 +9,7 @@ const Hero = () => {
       <h1 className='text-3xl md:text-4xl font-bold text-center w-full md:w-3/4 lg:w-2/3 mx-auto'>
         Power Up Your Events with Interactive <span> Q&A  </span>Sessions</h1>
       
-      <p className= ' block text-center w-full  md:w-3/4  lg:w-2/3 mx-auto pt-3 text-[#5F6064] mt-4'>PAAQ Events helps you Engage, Educate, and <br /> Empower Your Audience Seamlessly. </p>
+      <p className= ' block text-center w-full  md:w-3/4  lg:w-2/3 mx-auto pt-3 text-[#5F6064] mt-4'>Dee Events helps you Engage, Educate, and <br /> Empower Your Audience Seamlessly. </p>
 
       <div className='flex flex-col md:flex-row  justify-center items-center gap-4 mt-6 mb-8 w-full' >
         <button className='bg-[#2588C5] text-white px-3 py-3 rounded w-full md:w-auto'>Sign Up for free</button>

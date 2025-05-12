@@ -129,7 +129,7 @@ const Plans = ({ isAnnual = true }) => {
       description: "Brand your event with custom logos, banners etc."
     },
     {
-      text: "PAAQ AI",
+      text: "DEE AI",
       description: "Attendees can rewrite questions, and creators can craft descriptions with PAAQ AI."
     }
   ];
