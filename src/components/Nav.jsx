@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const PAAQNavbar = () => {
+const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -108,4 +108,4 @@ const PAAQNavbar = () => {
   );
 };
 
-export default PAAQNavbar;
+export default Nav;
