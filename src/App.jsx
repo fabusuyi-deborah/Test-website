@@ -9,6 +9,7 @@ import Pricing from './components/Pricing.jsx';
 import Comm from './components/Comm.jsx';
 import QandA from './components/QandA.jsx';
 import Signup from './components/Signup.jsx';
+import Footer from './components/Footer.jsx';
 // import  Plans from './components/Plans.jsx';
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
       <Comm />
       <QandA />
       <Signup />
+      <Footer />
       {/* <Plans /> */}
       </div>
   );
