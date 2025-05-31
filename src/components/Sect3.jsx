@@ -59,7 +59,7 @@ const Sect3 = () => {
   const HeroFeature = ({ feature }) => (
     <div className={`flex flex-col lg:flex-row ${feature.bgColor} rounded-lg m-4 xl:mx-8 2xl:mx-16`}>
       <div className='text-[#1C1C1C] flex flex-col justify-center lg:px-12 xl:px-16 2xl:px-20 m-6 lg:w-1/2'>
-        <h2 className='text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 xl:mb-6'>{feature.title}</h2>
+        <h2 className='text-2xl lg:text-3xl xl:text-4xl font-bold mb-4 xl:mb-6'>{feature.title}</h2>
         <p className='text-base lg:text-lg xl:text-xl leading-relaxed'>{feature.description}</p>
       </div>
       <div className='lg:w-1/2 flex items-center'>
