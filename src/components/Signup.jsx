@@ -13,10 +13,10 @@ const Signup = () => {
           </p>
         </div>
         <div className='flex md:flex-row justify-center items-center gap-4 mt-6 mb-8 w-full max-w-3xl mx-auto'>
-          <button className='bg-[#2588C5] text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-[#1A6F9B] transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'>
+          <button className='bg-[#2588C5] text-white font-semibold py-4 px-4 rounded-lg shadow-md hover:bg-[#1A6F9B] transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'>
             Sign up for free
           </button>
-          <button className='bg-[#E8EDED] text-[#5F6064] font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-[#e7eaea] transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-amber-50 focus:ring-offset-2'>
+          <button className='bg-[#E8EDED] text-[#5F6064] font-semibold py-4 px-4 rounded-lg shadow-md hover:bg-[#e7eaea] transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-amber-50 focus:ring-offset-2'>
             Book a Demo
           </button>
         </div>

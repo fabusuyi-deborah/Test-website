@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ChevronDown, ChevronUp } from 'lucide-react'
+import { Plus, Minus } from 'lucide-react'
 
 const QandA = () => {
   const [openItems, setOpenItems] = useState(new Set())
@@ -50,10 +50,10 @@ const QandA = () => {
     const isOpen = openItems.has(item.id)
 
     return (
-      <div className='border border-gray-200 rounded-lg mb-2 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200'>
+      <div className='border border-[#F5F7FB] rounded-lg mb-2 overflow-hidden  duration-200'>
         <button
           onClick={() => toggleItem(item.id)}
-          className='w-full px-6 py-4 text-left bg-white hover:bg-gray-50 focus:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset transition-colors duration-200'
+          className='w-full px-6 py-4 text-left bg-[#F5F7FB] focus:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset transition-colors duration-200'
           aria-expanded={isOpen}
         >
           <div className='flex justify-between items-center'>
@@ -62,9 +62,9 @@ const QandA = () => {
             </h3>
             <div className='flex-shrink-0'>
               {isOpen ? (
-                <ChevronUp className='w-5 h-5 text-gray-500' />
+                <Minus className='w-5 h-5 text-gray-500' />
               ) : (
-                <ChevronDown className='w-5 h-5 text-gray-500' />
+                <Plus className='w-5 h-5 text-gray-500' />
               )}
             </div>
           </div>
@@ -75,7 +75,7 @@ const QandA = () => {
             isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
-          <div className='px-6 py-4 bg-[#F5F7FB] border-t border-gray-100'>
+          <div className='px-6 py-4 bg-[#F5F7FB] '>
             <p className='text-gray-700 leading-relaxed'>
               {item.content}
             </p>
@@ -88,12 +88,10 @@ const QandA = () => {
   return (
     <div className='max-w-4xl mx-auto p-6'>
       <div className='mb-8'>
+        <p className='pb-2 text-center'>KNOW MORE ABOUT DEE EVENTS</p>
         <h1 className='text-3xl font-bold text-gray-900 mb-4 text-center'>
           Frequently Asked Questions
         </h1>
-        <p className='text-gray-600 mb-6'>
-          Here are some common questions about Dee Events. If you have more questions, feel free to reach out to our support team.
-        </p>
       </div>
 
       {/* Accordion Items */}

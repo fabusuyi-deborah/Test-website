@@ -57,7 +57,7 @@ const Sect3 = () => {
 
   // Reusable hero feature component
   const HeroFeature = ({ feature }) => (
-    <div className={`flex flex-col lg:flex-row ${feature.bgColor} rounded-lg m-4 xl:mx-8 2xl:mx-16`}>
+    <div className={`flex flex-col lg:flex-row ${feature.bgColor} rounded-lg`}>
       <div className='text-[#1C1C1C] flex flex-col justify-center lg:px-12 xl:px-16 2xl:px-20 m-6 lg:w-1/2'>
         <h2 className='text-2xl lg:text-3xl xl:text-4xl font-bold mb-4 xl:mb-6'>{feature.title}</h2>
         <p className='text-base lg:text-lg xl:text-xl leading-relaxed'>{feature.description}</p>
@@ -75,27 +75,28 @@ const Sect3 = () => {
         <img src={feature.image} alt={feature.alt} className='w-full h-auto object-contain max-h-48 lg:max-h-56 xl:max-h-64' />
       </div>
       <div className='pt-4'>
-        <h2 className='font-bold text-2xl lg:text-3xl xl:text-4xl mb-2 xl:mb-4'>{feature.title}</h2>
-        <p className='pt-2 text-sm lg:text-base xl:text-lg leading-relaxed'>{feature.description}</p>
+        <h2 className='font-bold text-2xl  mb-2 xl:mb-4'>{feature.title}</h2>
+        <p className='pt-2 text-md lg:text-base xl:text-lg leading-relaxed'>{feature.description}</p>
       </div>
     </div>
   )
 
   return (
-    <section className='py-8 px-4 lg:py-12 xl:py-16 2xl:py-20 lg:mx-auto max-w-7xl xl:max-w-none 2xl:max-w-screen-2xl'>
-      {/* Hero Feature */}
-      <HeroFeature feature={heroFeatures[0]} />
-      
-      {/* Grid Features */}
-      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12 2xl:gap-16 py-12 xl:py-16 2xl:py-20 px-6 xl:px-12 2xl:px-16'>
-        {gridFeatures.map((feature) => (
-          <FeatureCard key={feature.id} feature={feature} />
-        ))}
-      </div>
+    <section className="py-8 lg:py-12 xl:py-16 2xl:py-20">
+  <div className="px-4 md:px-6 xl:px-8 2xl:px-16 max-w-6xl mx-auto space-y-20">
+    <HeroFeature feature={heroFeatures[0]} />
 
-      {/* Second Hero Feature */}
-      <HeroFeature feature={heroFeatures[1]} />
-    </section>
+    {/* Grid Features */}
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12 2xl:gap-16">
+      {gridFeatures.map((feature) => (
+        <FeatureCard key={feature.id} feature={feature} />
+      ))}
+    </div>
+
+    <HeroFeature feature={heroFeatures[1]} />
+  </div>
+</section>
+
   )
 }
 

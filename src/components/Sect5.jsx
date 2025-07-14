@@ -3,9 +3,7 @@ import FI from '../assets/FI.png'
 import DSC from '../assets/DSC.png'
 import GP from '../assets/Gp.png'
 
-
 const Sect5 = () => {
-  // Data-driven approach - makes it easy to add/modify steps
   const steps = [
     {
       id: 1,
@@ -33,10 +31,9 @@ const Sect5 = () => {
     }
   ]
 
-  // Reusable step card component
   const StepCard = ({ step }) => (
     <div className={`${step.bgColor} rounded-2xl`}>
-      <img src={step.image} alt={step.alt} className='w-full' />
+      <img src={step.image} alt={step.alt} className="w-full" />
       <div>
         <p className={`${step.textColor} text-2xl p-6`}>
           {step.description}
@@ -46,19 +43,20 @@ const Sect5 = () => {
   )
 
   return (
-    <section className='py-8 px-4 md:py-8 lg:mx-auto'>
-      <h2 className='text-center font-bold text-[#979797] text-3xl'>
-        How it Works
-      </h2>
-      
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mt-10'>
-        {steps.map((step) => (
-          <StepCard key={step.id} step={step} />
-        ))}
+    <section className="py-8 md:py-12 xl:py-16 2xl:py-20">
+      <div className="px-4 md:px-6 xl:px-8 2xl:px-16 max-w-6xl mx-auto">
+        <h2 className="text-center font-bold text-[#979797] text-3xl">
+          How it Works
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+          {steps.map((step) => (
+            <StepCard key={step.id} step={step} />
+          ))}
+        </div>
       </div>
     </section>
   )
 }
 
-
-export default Sect5;
+export default Sect5

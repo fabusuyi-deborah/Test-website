@@ -4,7 +4,7 @@ import heroImage from '../assets/heroimg.png';
 const Hero = () => {
   return (
     <div>
-      <section className=" font-intertight flex flex-col items-center px-4 py-8 md:py-12 lg:mx-auto">
+      <section className=" font-intertight flex flex-col items-center px-4 py-8 max-w-6xl md:py-12 lg:mx-auto">
         <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-center w-full md:w-3/4 lg:w-2/3 mx-auto leading-relaxed'>
           Power Up Your Events with Interactive <span className="bg-[#2588C5] p-1 rounded">Q&A</span> Sessions
         </h1>
@@ -18,7 +18,7 @@ const Hero = () => {
           <button className='bg-[#2588C5] text-white px-6 py-3 rounded-lg w-full md:w-auto font-semibold hover:bg-[#1e6fa0] transition-colors'>
             Sign Up for free
           </button>
-          <button className='bg-[#E8EDED] px-6 py-3 rounded-lg text-[#5F6064] w-full md:w-auto font-semibold hover:bg-[#d0d5d5] transition-colors mt-2 md:mt-0'>
+          <button className='border border- bg-[#E8EDED] px-6 py-3 rounded-lg text-[#5F6064] w-full md:w-auto font-semibold mt-2 md:mt-0'>
             Book a Demo
           </button>
         </div>
